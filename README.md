@@ -1,3 +1,19 @@
 # node-docker-html-starter
 Basic docker set up with node html and express
-# docker build -t node-html-docker .
+
+# Build Docker Image
+1) docker build -t node-docker-html-starter .
+
+if the build is successful
+# Check image
+2) docker images
+
+Image will be availbale on the docker image list
+
+docker run node-docker-html-starter, will start the app but server wont respond to local:8080
+instead run
+3) docker run -d -P --name demo1 node-docker-html-starter 
+   --demo1 is the name
+4) docker ps -a
+
+
